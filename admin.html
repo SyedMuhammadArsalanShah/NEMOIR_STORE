@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NEMOIR | Operations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#0a0f0b] text-white min-h-screen flex items-center justify-center p-6 font-sans">
+
+    <div id="auth" class="w-full max-w-md bg-white/5 backdrop-blur-2xl p-12 rounded-[3rem] border border-white/10 shadow-2xl">
+        <h2 class="serif text-3xl italic tracking-widest mb-8 text-center">N E M O I R</h2>
+        <input type="email" id="e" placeholder="Email" class="w-full p-4 mb-4 bg-white/5 rounded-2xl outline-none border border-white/10 text-sm">
+        <input type="password" id="p" placeholder="Key" class="w-full p-4 mb-8 bg-white/5 rounded-2xl outline-none border border-white/10 text-sm">
+        <button onclick="login()" class="w-full bg-emerald-600 py-4 rounded-2xl font-bold uppercase tracking-widest text-[10px]">Access Portal</button>
+    </div>
+
+    <div id="dash" class="hidden w-full max-w-4xl">
+        <h1 class="text-3xl font-serif italic mb-10">Inventory Manager</h1>
+        <div class="grid md:grid-cols-2 gap-10">
+            <div class="space-y-4">
+                <input type="text" id="n" placeholder="Product Name" class="w-full p-4 bg-white/5 border border-white/10 rounded-xl">
+                <input type="text" id="pr" placeholder="Price (PKR)" class="w-full p-4 bg-white/5 border border-white/10 rounded-xl">
+                <input type="text" id="im" placeholder="Image URL (Unsplash)" class="w-full p-4 bg-white/5 border border-white/10 rounded-xl">
+                <textarea id="de" placeholder="Description" class="w-full p-4 bg-white/5 border border-white/10 rounded-xl h-24"></textarea>
+                <button onclick="add()" class="w-full bg-white text-black py-4 rounded-xl font-bold text-xs uppercase">Queue Product</button>
+            </div>
+            <div class="bg-emerald-950/30 p-8 rounded-[2rem] border border-emerald-500/20 text-center">
+                <h3 class="text-xs uppercase tracking-widest mb-6 opacity-50">Download Database Asset</h3>
+                <div id="count" class="text-4xl mb-6 italic">0</div>
+                <div class="flex flex-col gap-4">
+                    <button onclick="exportData('json')" class="bg-emerald-600 p-4 rounded-xl text-[10px] font-bold uppercase">Get products.json</button>
+                    <button onclick="exportData('csv')" class="border border-emerald-500/30 p-4 rounded-xl text-[10px] font-bold uppercase hover:bg-emerald-600/20">Get products.csv</button>
+                </div>
+                <p class="text-[9px] mt-8 text-emerald-500 italic opacity-50 uppercase">Replace files in /data/ folder after download</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let db = [];
+        function login() {
+            if(document.getElementById('e').value === 'malaikayaseen13@gmail.com' && document.getElementById('p').value === 'Malaika-13') {
+                document.getElementById('auth').style.display = 'none';
+                document.getElementById('dash').classList.remove('hidden');
+            }
+        }
+        function add() {
+            db.push({
+                "name": document.getElementById('n').value,
+                "price": document.getElementById('pr').value,
+                "img": document.getElementById('im').value,
+                "desc": document.getElementById('de').value,
+                "size": "Premium Organic"
+            });
+            document.getElementById('count').innerText = db.length;
+            alert("Added!");
+        }
+        function exportData(type) {
+            let content, mime, name;
+            if(type === 'json') {
+                content = JSON.stringify(db, null, 2);
+                mime = 'application/json';
+                name = 'products.json';
+            } else {
+                const header = "name,price,img,desc,size\n";
+                const rows = db.map(i => `"${i.name}","${i.price}","${i.img}","${i.desc}","${i.size}"`).join("\n");
+                content = header + rows;
+                mime = 'text/csv';
+                name = 'products.csv';
+            }
+            const blob = new Blob([content], { type: mime });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url; a.download = name; a.click();
+        }
+    </script>
+</body>
+</html>

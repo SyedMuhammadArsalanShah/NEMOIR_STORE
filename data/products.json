@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Celestial Glow Facial Oil",
+        "price": "2,950",
+        "size": "30ml",
+        "img": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000",
+        "desc": "A premium blend of organic seeds to repair skin and restore natural radiance."
+    },
+    {
+        "name": "Root Vitality Hair Oil",
+        "price": "3,200",
+        "size": "100ml",
+        "img": "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=1000",
+        "desc": "Traditional 7-herb infusion designed to strengthen roots and promote thick growth."
+    },
+    {
+        "name": "Wild Himalayan Honey",
+        "price": "1,850",
+        "size": "500g",
+        "img": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000",
+        "desc": "100% pure raw honey harvested from the organic valleys of the Himalayas."
+    },
+    {
+        "name": "Celestial Glow Facial Oil",
+        "price": "2,950",
+        "size": "30ml",
+        "img": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000",
+        "desc": "A premium blend of organic seeds to repair skin and restore natural radiance."
+    },
+    {
+        "name": "Root Vitality Hair Oil",
+        "price": "3,200",
+        "size": "100ml",
+        "img": "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=1000",
+        "desc": "Traditional 7-herb infusion designed to strengthen roots and promote thick growth."
+    },
+    {
+        "name": "Wild Himalayan Honey",
+        "price": "1,850",
+        "size": "500g",
+        "img": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000",
+        "desc": "100% pure raw honey harvested from the organic valleys of the Himalayas."
+    },
+    {
+        "name": "Celestial Glow Facial Oil",
+        "price": "2,950",
+        "size": "30ml",
+        "img": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000",
+        "desc": "A premium blend of organic seeds to repair skin and restore natural radiance."
+    },
+    {
+        "name": "Root Vitality Hair Oil",
+        "price": "3,200",
+        "size": "100ml",
+        "img": "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=1000",
+        "desc": "Traditional 7-herb infusion designed to strengthen roots and promote thick growth."
+    },
+    {
+        "name": "Wild Himalayan Honey",
+        "price": "1,850",
+        "size": "500g",
+        "img": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000",
+        "desc": "100% pure raw honey harvested from the organic valleys of the Himalayas."
+    }
+]
