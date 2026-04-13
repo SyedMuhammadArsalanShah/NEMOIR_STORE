@@ -3,6 +3,7 @@
         "name": "Celestial Glow Facial Oil",
         "price": "2,950",
         "size": "30ml",
+        "category": "organic",
         "img": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000",
         "desc": "A premium blend of organic seeds to repair skin and restore natural radiance."
     },
@@ -10,6 +11,7 @@
         "name": "Root Vitality Hair Oil",
         "price": "3,200",
         "size": "100ml",
+        "category": "organic",
         "img": "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=1000",
         "desc": "Traditional 7-herb infusion designed to strengthen roots and promote thick growth."
     },
@@ -17,49 +19,24 @@
         "name": "Wild Himalayan Honey",
         "price": "1,850",
         "size": "500g",
+        "category": "organic",
         "img": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000",
         "desc": "100% pure raw honey harvested from the organic valleys of the Himalayas."
     },
     {
-        "name": "Celestial Glow Facial Oil",
-        "price": "2,950",
-        "size": "30ml",
-        "img": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000",
-        "desc": "A premium blend of organic seeds to repair skin and restore natural radiance."
+        "name": "Premium Cotton Kurta",
+        "price": "4,500",
+        "size": "Medium",
+        "category": "garments",
+        "img": "https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?q=80&w=1000",
+        "desc": "Hand-woven organic cotton kurta with minimal aesthetic embroidery."
     },
     {
-        "name": "Root Vitality Hair Oil",
-        "price": "3,200",
-        "size": "100ml",
-        "img": "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=1000",
-        "desc": "Traditional 7-herb infusion designed to strengthen roots and promote thick growth."
-    },
-    {
-        "name": "Wild Himalayan Honey",
-        "price": "1,850",
-        "size": "500g",
-        "img": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000",
-        "desc": "100% pure raw honey harvested from the organic valleys of the Himalayas."
-    },
-    {
-        "name": "Celestial Glow Facial Oil",
-        "price": "2,950",
-        "size": "30ml",
-        "img": "https://images.unsplash.com/photo-1601049541289-9b1b7bbbfe19?q=80&w=1000",
-        "desc": "A premium blend of organic seeds to repair skin and restore natural radiance."
-    },
-    {
-        "name": "Root Vitality Hair Oil",
-        "price": "3,200",
-        "size": "100ml",
-        "img": "https://images.unsplash.com/photo-1626784215021-2e39ccf971cd?q=80&w=1000",
-        "desc": "Traditional 7-herb infusion designed to strengthen roots and promote thick growth."
-    },
-    {
-        "name": "Wild Himalayan Honey",
-        "price": "1,850",
-        "size": "500g",
-        "img": "https://images.unsplash.com/photo-1580927752452-89d86da3fa0a?q=80&w=1000",
-        "desc": "100% pure raw honey harvested from the organic valleys of the Himalayas."
+        "name": "Linen Summer Shirt",
+        "price": "3,800",
+        "size": "Large",
+        "category": "garments",
+        "img": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=1000",
+        "desc": "Breathable pure linen shirt for a sustainable lifestyle."
     }
 ]
